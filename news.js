@@ -3,7 +3,7 @@
 console.log("ok");
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://gnews.io/api/v4/search?q=example&token=d05085a4b86a3e54dc48e97f7923aa49`, true);
+xhr.open('GET', `https://gnews.io/api/v4/search?q=example&token=6a08ae7710d6644b96638ad0cd4b2573`, true);
 
 let newsnow = document.getElementById('container');
 
