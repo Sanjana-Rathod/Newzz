@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+    body {
+      background: linear-gradient(rgba(3, 2, 2, 0.5), rgba(12, 2, 2, 0.5)),
+        url("bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-blend-mode: color;
+      justify-content: center;
+      color: rgb(252, 248, 248);
+    }
+    .header {
+      margin: auto;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 81px;
+    }
+    #container {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      margin: 10px;
+      /* display: flex;
+          flex-direction: column;
+          flex-wrap: no wrap; */
+    }
+    #newsbox {
+      margin: 5px;
+      height: 400px;
+      width: 100%;
+      transition: 1s;
+      display: inline-block;
+    }
+    .info {
+      display: inline;
+      vertical-align: top;
+      height: 350px;
+      width: 550px;
+      font-size: 0.5cm;
+      color: rgb(137, 237, 255);
+    }
+    #image img {
+      height: 392px;
+      width: 364px;
+      border-radius: 20px;
+      float: left;
+      margin: 15px;
+    }
+    .btn {
+      background-color: rgb(255, 255, 255);
+      color: rgb(138, 60, 240);
+      width: 200 px;
+      height:50px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .title{
+      font-family: 'Oswald', sans-serif;
+      font-size:19px;
+      color:rgb(247, 246, 218)
+        }
+    #datenow{
+      font-size:0.8cm;
+      font-family:Oswald', sans-serif";
+      color=rgb(186, 237, 240);
+    }
+    .info a:hover{
+      background-color:black;
+      scale:1;
+    }
+  </style>
+  <body>
+    <div class="header"><h1>News Now</h1><hr/></div>
+
+    <div id="container"></div>
+
+    <script src="news.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
